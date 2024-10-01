@@ -37,6 +37,18 @@ const Sobre=()=>{
             <h2 className="futuro">Nossa visão para o futuro</h2>
             <p>Mais do que vender veículos, queremos promover uma verdadeira mudança de mentalidade, onde a sustentabilidade e a tecnologia caminham juntas para criar um futuro mais limpo, acessível e inovador. Acreditamos que todos podem fazer parte dessa revolução, e a EletroDrive está aqui para guiá-lo nessa jornada.</p>
         </section>
+
+        <section className="equipe">
+            <h2>Membros da Equipe</h2>
+            <nav>
+                <ul>
+                    <li>Bruno Carneiro Leão</li>
+                    <li>Matheus Heneiques do Amaral</li>
+                    <li>Paulo Akira Okama</li>
+                    <li>Victor Mattenhauer Lopes Capp</li>
+                </ul>
+            </nav>
+        </section>
         </>
 
     )
