@@ -31,24 +31,14 @@ const Login=()=>{
                 Math.random().toString(16).substring(2)
                 sessionStorage.setItem("usuario",usuario.current.value);
                 sessionStorage.setItem("senha",token)
-                navigate("/")
-                alert("Login Efetuado!")
-        
-        }
-        if(validade()){
-
-            let token=
-                Math.random().toString(16).substring(2)+
-                Math.random().toString(16).substring(2)
-                sessionStorage.setItem("admin",usuario.current.value);
-                sessionStorage.setItem("senha",token)
                 navigate("/cadastrarprodutos")
-                alert("Bem-vindo Admin!")
+                alert("Login Efetuado!")
+
+        
         }
         else{
                 alert("usuario/senha inválidos")
         }
-
      }
 
      useEffect(()=>{
@@ -93,10 +83,6 @@ const Login=()=>{
                             </li>
                             <li>
                                 <span className="text1">Criar Conta</span>
-                            </li>
-                            <li>
-                                <span className="text1">Cadastrar Produtos</span>
-                                <Link to="/cadastrarprodutos"></Link>
                             </li>
                         </ul>
                     </form>
