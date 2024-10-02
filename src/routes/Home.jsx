@@ -6,6 +6,7 @@ import image5 from '../assets/image5.jpg'
 import image6 from '../assets/image6.jpeg'
 import image7 from '../assets/image7.jpg'
 import image8 from '../assets/image8.jpg'
+import SlideShow from '../components/SlideShow'
 
 
 
@@ -20,6 +21,7 @@ const Home=()=>{
 
         <main>
 
+            <SlideShow/>
             <section className="bem-vindo">
                 <h1>Bem-vindo à EletroDrive, Á revolução da mobilidade elétrica!</h1>
                 <p>Na EletroDrive, estamos movendo o futuro. Somos apaixonados por inovação e sustentabilidade, oferecendo uma seleção  de veículos elétricos que combina tecnologia de ponta, eficiência e compromisso com o meio ambiente. Acreditamos que a mobilidade pode ser mais inteligente, mais ecológica e acessível para todos.</p>
