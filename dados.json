@@ -4,6 +4,12 @@
             "usuario": "Fiap",
             "senha": "123123",
             "id": "vr3fe4w"
+        },
+
+        {
+            "usuario": "Admin",
+            "senha": "cidade",
+            "id": "f438ij"
         }
     ]
 }

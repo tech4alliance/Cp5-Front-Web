@@ -31,9 +31,21 @@ const Login=()=>{
                 Math.random().toString(16).substring(2)
                 sessionStorage.setItem("usuario",usuario.current.value);
                 sessionStorage.setItem("senha",token)
-                navigate("/cadastrarprodutos")
+                navigate("/")
+                alert("Login Efetuado!")
+        
+        }
+        if(validade()){
 
-        }else{
+            let token=
+                Math.random().toString(16).substring(2)+
+                Math.random().toString(16).substring(2)
+                sessionStorage.setItem("admin",usuario.current.value);
+                sessionStorage.setItem("senha",token)
+                navigate("/cadastrarprodutos")
+                alert("Bem-vindo Admin!")
+        }
+        else{
                 alert("usuario/senha inválidos")
         }
 
@@ -78,6 +90,9 @@ const Login=()=>{
                         <ul className="utilidades">
                             <li>
                                 <span className="text1">Esqueçeu a senha?</span>
+                            </li>
+                            <li>
+                                <span className="text1">Criar Conta</span>
                             </li>
                             <li>
                                 <span className="text1">Cadastrar Produtos</span>
