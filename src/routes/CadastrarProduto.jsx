@@ -1,65 +1,36 @@
+import {
+    Title,
+    Table,
+    TableHeader,
+    TableHeaderCell,
+    TableRow,
+    TableCell,
+    Button
+  } from '../css/CadastrarProdutoStyle';
+
 const CadastrarProduto=()=>{
 
     return(
         <>
-        <h1>Cadastrar Produtos</h1>
-        <table>
-            <tr>
-                <td>Carro</td>
-                <td>Preço</td>
-                <td>Fabricante</td>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-            <tr>
-                <td>BMW i8</td>
-                <td>2.000.00</td>
-                <td>BMW</td> <button>Cadastrar Carro</button>
-            </tr>
-        </table>
+        <Title>Cadastrar Produtos</Title>
+      <Table>
+        <TableHeader>
+          <TableHeaderCell>Carro</TableHeaderCell>
+          <TableHeaderCell>Preço</TableHeaderCell>
+          <TableHeaderCell>Fabricante</TableHeaderCell>
+          <TableHeaderCell>Ação</TableHeaderCell>
+        </TableHeader>
+        {[...Array(10)].map((index) => (
+          <TableRow key={index}>
+            <TableCell>BMW i8</TableCell>
+            <TableCell>800.000,00</TableCell>
+            <TableCell>BMW</TableCell>
+            <TableCell>
+              <Button>Cadastrar Carro</Button>
+            </TableCell>
+          </TableRow>
+        ))}
+      </Table>
         </>
     )
 }

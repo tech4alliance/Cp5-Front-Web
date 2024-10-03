@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 const primaryColor = '#1a1a1a';  
 const accentColor = '#d4af37';   
-const secondaryColor = '#f0f0f0';
-const buttonColor = '#1f1f1f';
 const buttonHoverColor = '#b8860b';
 
 export const Container = styled.section`
