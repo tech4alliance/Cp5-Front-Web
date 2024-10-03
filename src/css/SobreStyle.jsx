@@ -1,11 +1,10 @@
 import styled from 'styled-components';
 
-// Cores elegantes
-const primaryColor = '#1a1a1a'; // Preto elegante
-const secondaryColor = '#f5f5f5'; // Cinza claro
-const accentColor = '#d4af37'; // Dourado sofisticado
-const textColor = '#333'; // Cor de texto moderna
-const headingColor = '#000'; // Preto para headings
+const primaryColor = '#1a1a1a';
+const secondaryColor = '#f5f5f5';
+const accentColor = '#d4af37';
+const textColor = '#333';
+const headingColor = '#000';
 
 export const SobreNos = styled.header`
   background-color: ${primaryColor};
@@ -35,7 +34,7 @@ export const Imagem = styled.section`
   margin-bottom: 3rem;
 
   img {
-    max-width: 50%; /* Diminui a imagem para 50% da largura do contêiner */
+    max-width: 50%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -46,7 +45,7 @@ export const Imagem = styled.section`
     }
 
     @media (max-width: 768px) {
-      max-width: 70%; /* Ajuste para telas menores */
+      max-width: 70%;
     }
   }
 `;

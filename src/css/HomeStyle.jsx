@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
-// Definindo paleta de cores e estilo de fontes
-const primaryColor = '#1a1a1a';  // Preto elegante
-const accentColor = '#d4af37';   // Dourado sofisticado
-const secondaryColor = '#f0f0f0';  // Fundo claro
-const buttonColor = '#1f1f1f';  // Cor dos botões
-const buttonHoverColor = '#b8860b';  // Hover dos botões
+const primaryColor = '#1a1a1a';  
+const accentColor = '#d4af37';   
+const secondaryColor = '#f0f0f0';
+const buttonColor = '#1f1f1f';
+const buttonHoverColor = '#b8860b';
 
-// Container principal da página
 export const MainContainer = styled.main`
   background-color: ${secondaryColor};
   padding: 2rem;
@@ -15,7 +13,6 @@ export const MainContainer = styled.main`
   font-family: 'Arial', sans-serif;
 `;
 
-// Estilização para o cabeçalho
 export const Header = styled.header`
   background-color: ${primaryColor};
   color: ${accentColor};
@@ -37,7 +34,6 @@ export const Header = styled.header`
   }
 `;
 
-// Estilização da seção de boas-vindas
 export const WelcomeSection = styled.section`
   background-color: ${primaryColor};
   color: ${secondaryColor};
@@ -57,7 +53,6 @@ export const WelcomeSection = styled.section`
   }
 `;
 
-// Seção de razão para escolher a empresa
 export const ReasonSection = styled.section`
   background-color: ${secondaryColor};
   padding: 2rem;
@@ -91,7 +86,6 @@ export const ReasonSection = styled.section`
   }
 `;
 
-// Seção de missão
 export const MissionSection = styled.section`
   background-color: ${primaryColor};
   color: ${secondaryColor};
@@ -110,7 +104,6 @@ export const MissionSection = styled.section`
   }
 `;
 
-// Grid de produtos
 export const ProductGrid = styled.article`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -118,7 +111,6 @@ export const ProductGrid = styled.article`
   margin-bottom: 2rem;
 `;
 
-// Item de produto
 export const ProductItem = styled.section`
   background-color: ${primaryColor};
   color: ${secondaryColor};
@@ -163,14 +155,13 @@ export const ProductItem = styled.section`
   }
 `;
 
-// Estilização do SlideShow (ajuste de tamanho)
 export const SlideShowContainer = styled.div`
   width: 100%;
-  max-width: 800px; // Tamanho máximo do slideshow
-  margin: 0 auto; // Centraliza o slideshow
+  max-width: 800px;
+  margin: 0 auto;
   border-radius: 8px;
-  overflow: hidden; // Corta bordas excessivas
-
+  overflow: hidden;
+  
   img {
     width: 100%;
     height: auto;

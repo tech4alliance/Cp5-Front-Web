@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-// Cores elegantes
-const primaryColor = '#1a1a1a'; // Preto elegante
-const accentColor = '#d4af37'; // Dourado sofisticado
-const linkHoverColor = '#f5f5f5'; // Cor de hover
+
+const primaryColor = '#1a1a1a';
+const accentColor = '#d4af37';
+const linkHoverColor = '#f5f5f5';
 
 export const Navbar = styled.nav`
   display: flex;
