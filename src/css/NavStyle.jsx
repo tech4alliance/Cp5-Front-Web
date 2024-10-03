@@ -8,11 +8,12 @@ const linkHoverColor = '#f5f5f5';
 export const Navbar = styled.nav`
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   background-color: ${primaryColor};
   padding: 1rem 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: sticky;
+  border-radius:30px;
   top: 0;
   z-index: 1000;
   font-family: 'Arial', sans-serif;

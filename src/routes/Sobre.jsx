@@ -86,7 +86,7 @@ const Sobre = () => {
         <nav>
           <ul>
             <li>Bruno Carneiro Leão</li>
-            <li>Matheus Heneiques do Amaral</li>
+            <li>Matheus Henriques do Amaral</li>
             <li>Paulo Akira Okama</li>
             <li>Victor Mattenhauer Lopes Capp</li>
           </ul>

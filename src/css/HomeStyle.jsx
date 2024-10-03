@@ -6,6 +6,12 @@ const secondaryColor = '#f0f0f0';
 const buttonColor = '#1f1f1f';
 const buttonHoverColor = '#b8860b';
 
+export const Body = styled.body`
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+`
+
 export const MainContainer = styled.main`
   background-color: ${secondaryColor};
   padding: 2rem;
@@ -125,6 +131,10 @@ export const ProductItem = styled.section`
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
+  }
+
+  #produto-2{
+    height: 518px;
   }
 
   h3 {
