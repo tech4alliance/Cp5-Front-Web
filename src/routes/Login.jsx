@@ -16,7 +16,7 @@ const Login = () => {
   const [usuarios, setUsuarios] = useState([]);
   const navigate = useNavigate();
 
-  const validade = () => {
+  function validade(){
     for (let i = 0; i < usuarios.length; i++) {
       if (
         usuarios[i].usuario === usuario.current.value &&
