@@ -9,8 +9,27 @@ const buttonHoverColor = '#b8860b';
 export const Title = styled.h1`
   text-align: center;
   color: ${primaryColor};
-  margin-bottom: 2rem;
+  font-family: 'Arial', sans-serif;
 `;
+
+export const Logoutbtn = styled.button`
+    margin-left:40.5%;
+    margin-top:20px;
+    width:350px;
+    border-radius:20px;
+    border: solid 1px;
+    background-color: ${buttonColor};
+    color: ${secondaryColor};
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+  &:hover{
+    background-color: ${buttonHoverColor};
+    transition: ease-in-out 0.3s;
+  }
+`
 
 export const Table = styled.table`
   width: 70%;

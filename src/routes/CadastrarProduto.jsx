@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import {
     Title,
     Table,
@@ -5,13 +6,24 @@ import {
     TableHeaderCell,
     TableRow,
     TableCell,
-    Button
+    Button,
+    Logoutbtn
   } from '../css/CadastrarProdutoStyle';
 
 const CadastrarProduto=()=>{
 
+    const navigate = useNavigate();
+
+    const handleLogout=()=>{
+      sessionStorage.removeItem('senha');
+      sessionStorage.removeItem('usuario');
+      alert("Saindo...")
+      navigate("/")
+    }
+
     return(
         <>
+        <Logoutbtn onClick={handleLogout}>Sair</Logoutbtn>
         <Title>Cadastrar Produtos</Title>
       <Table>
         <TableHeader>
